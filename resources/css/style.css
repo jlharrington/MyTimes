@@ -1,9 +1,10 @@
 /* style.css for My Times */
 /* Updated 2017/08/10 */
 
-body {
-  font: Georgia;
-  display: flex;
+html {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
 
 header {
@@ -45,25 +46,21 @@ header a {
 }
 
 .content {
-  width: 1100px;
+  width: 1230px;
   display: flex;
   margin: 0 auto;
   padding-top: 100px;
-  border: 1px solid black;
-  align-content: center;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
-  border: 1px solid black;
+  margin-right: 30px;
 }
 
 .column.large {
   width: 630px;
   border: 1px solid red;
-  padding: 0;
 }
 
 .column.medium {
@@ -76,34 +73,54 @@ header a {
   border: 1px solid blue;
 }
 
-.article {
-  flex-direction: column;
-  border: 1px solid orange;
-  font-size: 17px;
+.other-stories {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid purple;
 }
 
-.img {
+.subcolumn {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid yellow;
+  width: 300px;
+}
+
+.text-article {
+  border: 1px solid aquamarine;
+  height: 250px;
+}
+
+.image-content {
+  display: flex;
   height: 300px;
 }
 
-.lead .img {
-  background-image: url("../../resources/img/img-story-main.png");
-}
-
-.img span {
+.image-content span {
   font-weight: bold;
   font-size: 30px;
   color: white;
+  text-align: center;
 }
 
-.fall .img {
+.lead .image-content span {
+  font-size: 40px;
+  text-align: left;
+}
+
+.lead .image-content {
+  background-image: url("../../resources/img/img-story-main.png");
+  width: 630px;
+}
+
+.fall.image-content {
   background-image: url("../../resources/img/img-story-2.png");
 }
 
-.politics .img {
+.politics.image-content {
   background-image: url("../../resources/img/img-story-1.png");
 }
 
-.technology .img {
+.technology.image-content {
   background-image: url("../../resources/img/img-story-3.png");
 }
