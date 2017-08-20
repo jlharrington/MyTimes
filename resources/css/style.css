@@ -58,6 +58,7 @@ header a {
   display: flex;
   margin: 0 auto;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .column {
@@ -68,36 +69,36 @@ header a {
 
 .column.large {
   width: 630px;
-  border: 1px solid red;
+/*  border: 1px solid red; */
 }
 
 .column.medium {
   width: 300px;
-  border: 1px solid green;
+/*  border: 1px solid green; */
 }
 
 .column.small {
   display: flex;
   flex-direction: column;
   width: 240px;
-  border: 1px solid blue;
+/*  border: 1px solid blue; */
 }
 
 .other-stories {
   display: flex;
   justify-content: space-between;
-  border: 1px solid purple;
+/*  border: 1px solid purple; */
 }
 
 .subcolumn {
   display: flex;
   flex-direction: column;
-  border: 1px solid yellow;
+/*  border: 1px solid yellow; */
   width: 300px;
 }
 
-.text-article {
-  border: 1px solid aquamarine;
+.subcolumn .text-article {
+/*  border: 1px solid aquamarine; */
   height: 250px;
 }
 
