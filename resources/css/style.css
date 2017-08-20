@@ -1,10 +1,18 @@
 /* style.css for My Times */
 /* Updated 2017/08/10 */
 
-html {
+/** {
+  padding: 0;
+  margin: 0;
+}*/
+
+html,body {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 header {
@@ -69,6 +77,8 @@ header a {
 }
 
 .column.small {
+  display: flex;
+  flex-direction: column;
   width: 240px;
   border: 1px solid blue;
 }
@@ -123,4 +133,59 @@ header a {
 
 .technology.image-content {
   background-image: url("../../resources/img/img-story-3.png");
+}
+
+.news-bites h3{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.news-bites span {
+  display: block;
+  background-color: WhiteSmoke;
+  color: DimGray;
+  font-size: 12px;
+  padding: 10px 20px;
+  border-bottom: solid 1px black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+.navi {
+  padding: 20px;
+}
+
+.mytimes {
+  display: inline-block;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: solid 1px white;
+  padding-right: 20px;
+}
+
+footer nav {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+footer nav span {
+  padding: 0px 10px;
+}
+
+.copy {
+
 }
